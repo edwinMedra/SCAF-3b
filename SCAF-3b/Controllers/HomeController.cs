@@ -37,6 +37,17 @@ namespace SCAF_3b.Controllers
             return View();
         }
 
+        // retornar la vista de Reportes
+        public IActionResult Reportes()
+        {
+            return View();
+        }
+
+
+        public IActionResult Login()
+        {
+            return View();
+        }
         // pagina no necesaria
         public IActionResult Privacy()
         {

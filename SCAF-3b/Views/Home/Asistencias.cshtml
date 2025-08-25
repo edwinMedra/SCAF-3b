@@ -2,3 +2,79 @@
 *@
 @{
 }
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">Registro de Asistencias</h2>
+
+    <!-- Selección de evento -->
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="card-body">
+            <form>
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold text-secondary">Evento</label>
+                        <select class="form-select border-primary" required>
+                            <option selected disabled>Seleccione un evento</option>
+                            <option value="1">Acto Cívico - 15/09/2025</option>
+                            <option value="2">Reunión de Padres - 20/10/2025</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-primary w-100">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tabla de asistencias -->
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <h5 class="card-title text-secondary mb-3">Listado de Padres e Hijos</h5>
+            <form>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover align-middle">
+                        <thead class="table-primary text-center">
+                            <tr>
+                                <th>Padre</th>
+                                <th>Alumno</th>
+                                <th>Estado de Asistencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Carlos Pérez</td>
+                                <td class="text-center">
+                                    <select class="form-select border-warning">
+                                        <option value="presente" selected>Presente</option>
+                                        <option value="ausente">Ausente</option>
+                                        <option value="justificado">Justificado</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>María López</td>
+                                <td>Andrea López</td>
+                                <td class="text-center">
+                                    <select class="form-select border-warning">
+                                        <option value="presente">Presente</option>
+                                        <option value="ausente" selected>Ausente</option>
+                                        <option value="justificado">Justificado</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Botón de guardar -->
+                <div class="text-end mt-3">
+                    <button type="submit" class="btn btn-warning text-white">
+                        Guardar Asistencias
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
