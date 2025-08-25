@@ -7,16 +7,32 @@ namespace SCAF_3b.Controllers
     public class HomeController : Controller
     {
 
+        // pagina principal en index
         public IActionResult Index()
         {
             return View();
         }
 
+        // pagina de padres 
         public IActionResult Padres()
         {
             return View();
         }
 
+        //retornar pagina de alumnos
+        public IActionResult Alumnos()
+        {
+            return View();
+        }
+
+        // retornar pagina de eventos
+        public IActionResult Eventos()
+        {
+            return View();
+        }
+
+
+        // pagina no necesaria
         public IActionResult Privacy()
         {
             return View();
