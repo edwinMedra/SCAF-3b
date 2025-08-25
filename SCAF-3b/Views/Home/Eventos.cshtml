@@ -2,4 +2,108 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - SCAF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #003366; /* Azul */
+            color: white;
+            padding: 15px 0;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 1.8rem;
+            }
+
+        .btn-primary {
+            background-color: #003366;
+            border-color: #003366;
+        }
+
+            .btn-primary:hover {
+                background-color: #0055aa;
+            }
+
+        .btn-warning {
+            background-color: #ff8800; /* Naranja */
+            border-color: #ff8800;
+        }
+
+            .btn-warning:hover {
+                background-color: #ff6600;
+            }
+
+   
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="text-center">
+        <h1>Sistema de Control de Asistencias - Eventos</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-primary">Lista de Eventos</h2>
+            <button class="btn btn-warning">+ Agregar Evento</button>
+        </div>
+
+        <!-- Tabla de eventos -->
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre del Evento</th>
+                    <th>Fecha</th>
+                    <th>Lugar</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Reunión General de Padres</td>
+                    <td>2025-09-10</td>
+                    <td>Aula Magna</td>
+                    <td>Reunión informativa sobre el nuevo ciclo escolar</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Editar</button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                        <button class="btn btn-warning btn-sm">Asistencias</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Festival de Ciencia</td>
+                    <td>2025-10-05</td>
+                    <td>Laboratorios</td>
+                    <td>Exposición de proyectos de los alumnos</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Editar</button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                        <button class="btn btn-warning btn-sm">Asistencias</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pie de página -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -31,6 +31,11 @@ namespace SCAF_3b.Controllers
             return View();
         }
 
+        // pagina de asistencias
+        public IActionResult Asistencias()
+        {
+            return View();
+        }
 
         // pagina no necesaria
         public IActionResult Privacy()
