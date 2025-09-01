@@ -54,6 +54,12 @@ namespace SCAF_3b.Controllers
             return View();
         }
 
+        // pagina de perfil 
+        public IActionResult Perfil()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
