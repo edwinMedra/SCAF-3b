@@ -9,5 +9,8 @@ namespace SCAF.Models
         public string Carnet { get; set; }
         public string NombreCompleto { get; set; }
         public DateTime FechaNacimiento { get; set; }
+        public string NivelActual { get; set; }
+        public string AnioLectivo { get; set; }
+
     }
 }
