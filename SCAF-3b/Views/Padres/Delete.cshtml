@@ -1,0 +1,67 @@
+﻿@model SCAF.Models.Padre
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Eliminar Padre";
+}
+
+<div class="container my-4">
+    <h2 class="text-center text-danger mb-4">Eliminar Padre</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-header" style="background-color: #ff9800; color: #fff; font-weight: bold;">
+            Confirmación de Eliminación
+        </div>
+        <div class="card-body">
+            <p>¿Estás seguro que deseas eliminar al siguiente padre?</p>
+
+            <dl class="row">
+                <dt class="col-sm-3">Nombre Completo</dt>
+                <dd class="col-sm-9">@Model.NombreCompleto</dd>
+
+                <dt class="col-sm-3">Documento</dt>
+                <dd class="col-sm-9">@Model.DocumentoIdentidad</dd>
+
+                <dt class="col-sm-3">Teléfono</dt>
+                <dd class="col-sm-9">@Model.Telefono</dd>
+
+                <dt class="col-sm-3">Correo</dt>
+                <dd class="col-sm-9">@Model.Correo</dd>
+            </dl>
+
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="IdPadre" />
+                <div class="text-end">
+                    <button type="submit" class="btn btn-danger">Confirmar Eliminación</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .btn-danger {
+        background-color: #ff5722;
+        border: none;
+        color: #fff;
+    }
+
+        .btn-danger:hover {
+            background-color: #e64a19;
+        }
+
+    .btn-secondary {
+        background-color: #FFD700;
+        color: #003366;
+        border: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #FFC107;
+        }
+</style>

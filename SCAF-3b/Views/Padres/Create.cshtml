@@ -1,0 +1,60 @@
+﻿@model SCAF.Models.Padre
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Crear Padre";
+}
+
+<div class="container my-4">
+    <h2 class="text-center text-primary mb-4">Agregar Nuevo Padre</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-header" style="background-color: #ff9800; color: #fff; font-weight: bold;">
+            Formulario de Registro
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                <div class="mb-3">
+                    <label asp-for="NombreCompleto" class="form-label">Nombre Completo</label>
+                    <input asp-for="NombreCompleto" class="form-control" />
+                    <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DocumentoIdentidad" class="form-label">Documento</label>
+                    <input asp-for="DocumentoIdentidad" class="form-control" />
+                    <span asp-validation-for="DocumentoIdentidad" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Telefono" class="form-label">Teléfono</label>
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Correo" class="form-label">Correo</label>
+                    <input asp-for="Correo" class="form-control" />
+                    <span asp-validation-for="Correo" class="text-danger"></span>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    body { background-color: #f8f9fa; }
+    .btn-success { background-color: #0d47a1; border: none; }
+    .btn-success:hover { background-color: #08306b; }
+    .btn-secondary { background-color: #FFD700; color: #003366; border: none; }
+    .btn-secondary:hover { background-color: #FFC107; }
+</style>
